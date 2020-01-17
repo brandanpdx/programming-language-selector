@@ -1,0 +1,10 @@
+.intro {
+  text-align: center;
+}
+
+form {
+  max-width: 800px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
