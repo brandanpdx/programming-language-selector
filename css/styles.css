@@ -1,12 +1,30 @@
+body {
+  background-color: #f2e9de;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
 .intro {
   text-align: center;
   border: 2px solid black;
-  margin: 10px;
+  margin-top: 30px;
 }
 
-form {
-  max-width: 800px;
-  padding: 20px;
-  text-align: center;
-  margin: auto;
+.form-questions {
+  margin: 30px;
+  border: 2px dashed black;
+  padding: 15px;
+}
+
+.btn-success {
+  margin-top: 20px;
+}
+
+.btn-danger {
+  margin-top: 20px;
+}
+
+#results {
+  margin: 30px;
+  border: 2px dashed black;
+  padding: 15px;
 }

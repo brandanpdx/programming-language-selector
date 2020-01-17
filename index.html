@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
@@ -17,50 +18,69 @@
       <h3>Are you interested in coding but not sure what language to start with? Take our quiz now!</h3>
     </div>
     <!-- Form Input -->
-    <form>
-      <div class="form-group">
-        <label for="name">
-          <h3>What is your first name?</h3>
-        </label>
-        <input id="name" class="form-control" type="text">
-      </div>
-      <div class="radio">
-        <h3>In school, which subject did you most prefer: math or english?</h3>
-        <label for="langlevel">
-          <input type="radio" name="langlevel" value="math">
-          Math
-        </label>
-      </div>
-      <div class="radio">
-        <label for="langlevel">
-          <input type="radio" name="langlevel" value="english">
-          English
-        </label>
-      </div>
-      <div class="coast">
-        <h3>Which U.S. coast would you prefer to live in?</h3>
-        <select class="form-control" id="coast">
-          <option value="west">West Coast</option>
-          <option value="east">East Coast</option>
-        </select>
-      </div>
-      <div class="dessert">
-        <h3>Which dessert option would you choose?</h3>
-        <select class="form-control" id="coast">
-          <option value="pie">Apple Pie</option>
-          <option value="cake">Cake</option>
-        </select>
-      </div>
-      <div class="cereal">
-        <h3>Do you pour the milk or cereal first?</h3>
-        <select class="form-control" id="coast">
-          <option value="milk">Milk/option>
-          <option value="cereal">Cereal</option>
-        </select>
-      </div>
+    <div class="form-questions">
+      <form>
+        <div class="form-group">
+          <label for="name">
+            <h3>What is your first name?</h3>
+          </label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="radio">
+          <h3>In school, which subject did you most prefer: math or english?</h3>
+          <label for="langlevel">
+            <input type="radio" name="langlevel" value="math" checked>
+            Math
+          </label>
+        </div>
+        <div class="radio">
+          <label for="langlevel">
+            <input type="radio" name="langlevel" value="english">
+            English
+          </label>
+        </div>
+        <div class="coast">
+          <h3>Which U.S. coast would you prefer to live in?</h3>
+          <select class="form-control" id="coast">
+            <option value="west">West Coast</option>
+            <option value="east">East Coast</option>
+          </select>
+        </div>
+        <div class="dessert">
+          <h3>Which dessert option would you choose?</h3>
+          <select class="form-control" id="dessert">
+            <option value="pie">Apple Pie</option>
+            <option value="cake">Cake</option>
+          </select>
+        </div>
+        <div class="cereal">
+          <h3>Do you pour the milk or cereal first?</h3>
+          <select class="form-control" id="cereal">
+            <option value="milk">Milk</option>
+            <option value="cereal">Cereal</option>
+          </select>
+        </div>
+        <button class="btn btn-success" type="submit">Submit!</button>
+        <button class="btn btn-danger" type="reset">Reset Form</button>
+      </form>
+    </div>
 
-
-    </form>
+    <!-- Potential Results -->
+    <div id="results">
+      <h1><strong>Your Results:</strong></h1>
+      <div id="Python">
+        <p><span id="name"></span>, thank you for taking the time to take our quiz! Based on your answers, you should
+          learn Python!</p>
+      </div>
+      <div id="C++">
+        <p><span id="name"></span>, thank you for taking the time to take our quiz! Based on your answers, you should
+          learn C++!</p>
+      </div>
+      <div id="Haskell">
+        <p><span id="name"></span>, thank you for taking the time to take our quiz! Based on your answers, you should
+          learn Haskell!</p>
+      </div>
+    </div>
   </div>
 </body>
 
