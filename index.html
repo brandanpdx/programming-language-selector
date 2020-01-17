@@ -15,7 +15,7 @@
     <!-- Header/Intro -->
     <div class="intro">
       <h1>Programming Language Suggester</h1>
-      <h3>Are you interested in coding but not sure what language to start with? Take our quiz now!</h3>
+      <h3>Are you interested in coding but not sure what language to start with? Take our quiz!</h3>
     </div>
     <!-- Form Input -->
     <div class="form-questions">
@@ -24,24 +24,20 @@
           <label for="name">
             <h3>What is your first name?</h3>
           </label>
-          <input id="name" class="form-control" type="text">
+          <input id="name" class="form-control" placeholder="Enter your name here!" type="text">
         </div>
-        <div class="radio">
-          <h3>In school, which subject did you most prefer: math or english?</h3>
-          <label for="langlevel">
-            <input type="radio" name="langlevel" value="math" checked>
-            Math
-          </label>
-        </div>
-        <div class="radio">
-          <label for="langlevel">
-            <input type="radio" name="langlevel" value="english">
-            English
-          </label>
+        <div class="subject">
+          <h3>Which was your favorite subject in school?</h3>
+          <select class="form-control" id="subject">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="math">Math</option>
+            <option value="english">English</option>
+          </select>
         </div>
         <div class="coast">
           <h3>Which U.S. coast would you prefer to live in?</h3>
           <select class="form-control" id="coast">
+            <option disabled selected value> -- select an option -- </option>
             <option value="west">West Coast</option>
             <option value="east">East Coast</option>
           </select>
@@ -49,6 +45,7 @@
         <div class="dessert">
           <h3>Which dessert option would you choose?</h3>
           <select class="form-control" id="dessert">
+            <option disabled selected value> -- select an option -- </option>
             <option value="pie">Apple Pie</option>
             <option value="cake">Cake</option>
           </select>
@@ -56,6 +53,7 @@
         <div class="cereal">
           <h3>Do you pour the milk or cereal first?</h3>
           <select class="form-control" id="cereal">
+            <option disabled selected value> -- select an option -- </option>
             <option value="milk">Milk</option>
             <option value="cereal">Cereal</option>
           </select>
@@ -64,21 +62,17 @@
         <button class="btn btn-danger" type="reset">Reset Form</button>
       </form>
     </div>
-
     <!-- Potential Results -->
     <div id="results">
       <h1><strong>Your Results:</strong></h1>
       <div id="Python">
-        <p><span id="name"></span>, thank you for taking the time to take our quiz! Based on your answers, you should
-          learn Python!</p>
+        <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers, you should learn <strong>Python!</strong></p>
       </div>
       <div id="C++">
-        <p><span id="name"></span>, thank you for taking the time to take our quiz! Based on your answers, you should
-          learn C++!</p>
+        <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers, you should learn <strong>C++!</strong></p>
       </div>
       <div id="Haskell">
-        <p><span id="name"></span>, thank you for taking the time to take our quiz! Based on your answers, you should
-          learn Haskell!</p>
+        <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers, you should learn <strong>Haskell!</strong></p>
       </div>
     </div>
   </div>
