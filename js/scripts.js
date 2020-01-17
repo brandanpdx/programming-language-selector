@@ -6,10 +6,9 @@ $(document).ready(function() {
     var coast = $("#coast").val();
     var dessert = $("#dessert").val();
     var cereal = $("#cereal").val();
+    
 
-    console.log(nameResult)
-
-    if (nameResult === "undefined") {
+    if (nameResult === "") {
       alert("Please enter your name!");
     } else if (subject === "english") {
       $(".nameresult").text(nameResult);
@@ -24,7 +23,8 @@ $(document).ready(function() {
     } else {
       $(".nameresult").text(nameResult);
       $("#results").show();
+      $("#Python").hide();
+      $("#C").hide();
     }
-
-    })
+  })
 })
