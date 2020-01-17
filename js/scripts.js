@@ -10,12 +10,12 @@ $(document).ready(function() {
 
     if (nameResult === "") {
       alert("Please enter your name!");
-    } else if (subject === "english") {
+    } else if (subject === "english" || subject === "art") {
       $(".nameresult").text(nameResult);
       $("#results").show();
       $("#C").hide();
       $("#Haskell").hide();
-    } else if (subject === "math") {
+    } else if (subject === "math" || subject === "science") {
       $(".nameresult").text(nameResult);
       $("#results").show();
       $("#Python").hide();
