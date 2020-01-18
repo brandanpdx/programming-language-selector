@@ -1,24 +1,31 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background: #F2F1ED;
 }
 
 .container {
-  background-color: #F2E9DE;
+  background-color: #44C9F6;
   padding: 20px;
 }
 
+.container img {
+  width: 100%;
+}
+
 .intro {
-  /* text-align: center;
-  border: 2px solid black; */
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   margin: 20px;
   padding: 15px;
-  border: 2px solid black;
 }
 
 .intro h1 {
   font-family: 'Roboto', sans-serif;
-  color: #ED9121;
   font-weight: 900;
+  color: #F25924;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
 }
 
 .form-questions {
