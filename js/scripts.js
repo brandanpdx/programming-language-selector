@@ -6,8 +6,7 @@ $(document).ready(function() {
     var coast = $("#coast").val();
     var dessert = $("#dessert").val();
     var cereal = $("#cereal").val();
-    
-
+  
     if (nameResult === "") {
       alert("Please enter your name!");
     } else if (subject === "english" || subject === "art") {
@@ -15,7 +14,7 @@ $(document).ready(function() {
       $("#results").show();
       $("#C").hide();
       $("#Haskell").hide();
-    } else if (subject === "math" || subject === "science") {
+    } else if (subject === "math") {
       $(".nameresult").text(nameResult);
       $("#results").show();
       $("#Python").hide();

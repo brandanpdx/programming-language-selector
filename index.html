@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
@@ -14,70 +15,76 @@
   <div class="container">
     <!-- Header/Intro -->
     <div class="intro">
-      <h1>Programming Language Suggester</h1>
-      <h3>Are you interested in coding but not sure what language to start with? Take our quiz!</h3>
+      <h1>PROGRAMMING LANGUAGE SUGGESTER</h1>
+      <h4>It seems like everyone is learning to code right now. With all the different paths, which one should you take?</h4>
     </div>
     <!-- Form Input -->
-    <div class="form-questions">
-      <form>
-        <div class="form-group">
-          <label for="name">
-            <h3>What is your first name?</h3>
-          </label>
-          <input id="name" class="form-control" placeholder="Enter your name here!" type="text">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-questions">
+          <form>
+            <div class="form-group">
+              <label for="name">
+                <h3>What is your first name?</h3>
+              </label>
+              <input id="name" class="form-control" placeholder="Enter your name here!" type="text">
+            </div>
+            <div class="subject">
+              <h3>Which was your favorite subject in school?</h3>
+              <select class="form-control" id="subject">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="math">Math</option>
+                <option value="english">English</option>
+                <option value="science">Science</option>
+                <option value="art">Art</option>
+              </select>
+            </div>
+            <div class="coast">
+              <h3>Which U.S. coast would you prefer to live in?</h3>
+              <select class="form-control" id="coast">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="west">West Coast</option>
+                <option value="east">East Coast</option>
+              </select>
+            </div>
+            <div class="dessert">
+              <h3>Which dessert option would you choose?</h3>
+              <select class="form-control" id="dessert">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="pie">Apple Pie</option>
+                <option value="cake">Cake</option>
+              </select>
+            </div>
+            <div class="cereal">
+              <h3>Do you pour the milk or cereal first?</h3>
+              <select class="form-control" id="cereal">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="milk">Milk</option>
+                <option value="cereal">Cereal</option>
+              </select>
+            </div>
+            <button class="btn btn-success" type="submit">Submit!</button>
+            <button class="btn btn-danger" type="reset">Reset Form</button>
+          </form>
         </div>
-        <div class="subject">
-          <h3>Which was your favorite subject in school?</h3>
-          <select class="form-control" id="subject">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="math">Math</option>
-            <option value="english">English</option>
-            <option value="science">Science</option>
-            <option value="art">Art</option>
-          </select>
-        </div>
-        <div class="coast">
-          <h3>Which U.S. coast would you prefer to live in?</h3>
-          <select class="form-control" id="coast">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="west">West Coast</option>
-            <option value="east">East Coast</option>
-          </select>
-        </div>
-        <div class="dessert">
-          <h3>Which dessert option would you choose?</h3>
-          <select class="form-control" id="dessert">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="pie">Apple Pie</option>
-            <option value="cake">Cake</option>
-          </select>
-        </div>
-        <div class="cereal">
-          <h3>Do you pour the milk or cereal first?</h3>
-          <select class="form-control" id="cereal">
-            <option disabled selected value> -- select an option -- </option>
-            <option value="milk">Milk</option>
-            <option value="cereal">Cereal</option>
-          </select>
-        </div>
-        <button class="btn btn-success" type="submit">Submit!</button>
-        <button class="btn btn-danger" type="reset">Reset Form</button>
-      </form>
-    </div>
-    <!-- Potential Results -->
-    <div id="results">
-      <h1><strong>Your Results:</strong></h1>
-      <div id="Python">
-        <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers, you
-          should learn <strong>Python!</strong></p>
       </div>
-      <div id="C">
-        <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers, you
-          should learn <strong>C++!</strong></p>
-      </div>
-      <div id="Haskell">
-        <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers, you
-          should learn <strong>Haskell!</strong></p>
+      <!-- Potential Results -->
+      <div class="col-md-6">
+        <div id="results">
+          <h1><strong>Your Results:</strong></h1>
+          <div id="Python">
+            <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers,
+              you should learn <strong>Python!</strong></p>
+          </div>
+          <div id="C">
+            <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers,
+              you should learn <strong>C++!</strong></p>
+          </div>
+          <div id="Haskell">
+            <p><span class="nameresult"></span>, thank you for taking the time to take our quiz! Based on your answers,
+              you should learn <strong>Haskell!</strong></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
