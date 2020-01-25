@@ -12,18 +12,22 @@ $(document).ready(function() {
     } else if (subject === "english" || subject === "art") {
       $(".nameresult").text(nameResult);
       $("#results").show();
+      $("#Python").show();
       $("#C").hide();
       $("#Haskell").hide();
     } else if (subject === "math") {
       $(".nameresult").text(nameResult);
       $("#results").show();
+      $("#C").show();
       $("#Python").hide();
       $("#Haskell").hide();
     } else {
       $(".nameresult").text(nameResult);
       $("#results").show();
+      $("#Haskell").show();
       $("#Python").hide();
       $("#C").hide();
+
       
     }
   })
